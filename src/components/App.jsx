@@ -39,7 +39,7 @@ export class App extends Component  {
       contacts: prevState.contacts.filter(contact => contact.id !== cId),
     }));
   };
-  
+
   render() {
     const { contacts, filter } = this.state;
     const normalizedFilter = filter.toLowerCase();
